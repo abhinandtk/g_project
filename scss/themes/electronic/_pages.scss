@@ -1,0 +1,241 @@
+#homepage-7 {
+    .ps-btn,
+    button.ps-btn {
+        background-color: $color-electronic;
+        color: #ffffff;
+        &:hover {
+            background-color: darken($color-electronic, 5%);
+        }
+    }
+
+    .ps-carousel {
+        .slick-arrow {
+            &:hover {
+                background-color: $color-electronic;
+                color: #fff;
+            }
+        }
+    }
+
+    .ps-home-banner {
+        padding-top: 30px;
+        padding-bottom: 40px;
+
+        .container {
+            display: flex;
+            flex-flow: row nowrap;
+
+            > * {
+                width: 100%;
+            }
+
+            .ps-section__left {
+                max-width: calc(100% - 380px);
+                padding-right: 30px;
+            }
+
+            .ps-section__right {
+                max-width: 380px;
+
+                .ps-collection {
+                    margin-bottom: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            @include media('<lg') {
+                flex-flow: column wrap;
+
+                .ps-section__left {
+                    max-width: 100%;
+                    margin-bottom: 30px;
+                    padding-right: 0;
+                }
+
+                .ps-section__right {
+                    width: 100%;
+                    max-width: 100%;
+                    display: flex;
+                    flex-flow: row nowrap;
+
+                    .ps-collection {
+                        width: 100%;
+                        max-width: 50%;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .ps-top-categories {
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .ps-promotions {
+        padding: 40px 0;
+
+        .ps-collection {
+            @include media('<sm') {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .ps-product-list {
+        margin-bottom: 50px;
+    }
+
+    .ps-deal-of-day {
+        .ps-product {
+            .ps-product__price {
+                color: #690;
+                font-size: 18px;
+
+                del {
+                    margin-left: 10px;
+                    font-size: 14px;
+                }
+
+                small {
+                    margin-left: 10px;
+                    color: red;
+                }
+            }
+        }
+    }
+
+    .ps-home-blog {
+        padding-top: 50px;
+        padding-bottom: 70px;
+        background-color: #f5f5f5;
+
+        .ps-block--recent-viewed {
+            padding-top: 70px;
+            border-top: 1px solid #e3e3e3;
+        }
+    }
+}
+
+.ps-product__price-electronics{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about_gava{
+    width: 100%;
+    background-color: #384D9C;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow-x: hidden;
+    text-align: left;
+
+    .content-about{
+        padding: 5rem 5rem 3rem 5rem;
+        width: 65%;
+
+
+    }
+}
+
+.images-about{
+    padding:6rem 4rem ;
+
+    .image1{
+        position: relative;
+        width: 100%;
+
+    }
+}
+.about-gava-content{
+    padding:10rem 3rem 10rem 1rem;
+    p{
+        color:white;
+        font-size: 1vw;
+    }
+    h2{
+        color: white;
+        font-size: 4vw;
+    }
+
+}
+@media screen and (max-width:536px){
+    .images-about{
+        padding:10px ; 
+    } 
+    .about-gava-content{
+        padding:6rem 3rem 10rem 1rem;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .about-gava-content{
+        p{
+            font-size: 12px;
+        }
+        h2{
+            font-size: 18px;
+        }
+    }
+}
+
+.btn-about-gava{
+    background-color: white;
+    color: #384D9C;
+    border-radius: 6px;
+    border: none;
+    padding: 12px 30px;
+}
+
+.sell_banner{
+    position:relative;
+    padding: 0 30px 20px 30px;
+    img{
+        width:100%;
+    }
+    .left_content{
+        position: absolute;
+        width: 50%;
+        top: 40%;
+        padding-left: 15%;
+        p{
+            color: white;
+            font-size: 2.8vw;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        button{
+            background: transparent;
+            border: 2px solid white;
+            padding: 5px 20px;
+            color:white;
+            font-size:1.6vw;
+        }
+    }
+}
+
+@media screen and (max-width:568px){
+    .sell_banner{
+        .left_content{
+            p{
+                margin-bottom: 0px;
+            }
+            button{
+                padding: 1px 5px;
+                border:1px solid white;
+                font-size: 8px;
+            }
+        }
+
+    }
+
+}
